@@ -1,0 +1,157 @@
+/* Basic Reset */
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Container Styling */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 15px;
+}
+
+/* Button Styling */
+.btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Colors */
+.container1 {
+    background-color: #e74c3c; /* Red */
+}
+
+.container2 {
+    background-color: #2ecc71; /* Green */
+}
+
+.container3 {
+    background-color: #3498db; /* Blue */
+}
+
+.container4 {
+    background-color: #f39c12; /* Yellow */
+}
+
+/* Button Flash Effect */
+.btn.flash {
+    animation: flash 0.5s ease;
+}
+
+@keyframes flash {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Button Active Effect */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Animated Pulsing Effect for active sequence */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pulsing {
+    animation: pulse 1s infinite;
+}
+
+/* .container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:250px 250px;
+    row-gap: 10px;
+}
+.container1{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    background-color: brown;
+    border: 5px solid black;
+}
+.container2{
+    width: 200px;
+    height: 200px;
+    border-radius:20%;
+    background-color: grey;
+    border: 5px solid black;
+}
+.container3{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 5px solid black;
+    background-color: rgb(226, 97, 23);
+}
+.container4{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    background-color:rgb(95, 67, 95);
+    border: 5px solid black;
+}
+
+.flash{
+    background-color: white;
+} */
